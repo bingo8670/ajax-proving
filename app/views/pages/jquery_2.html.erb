@@ -1,0 +1,25 @@
+<p>
+  <a id="my-open-click">Open</a>
+</p>
+
+<div id="foo" style="border: 1px solid red;">
+  <a id="my-hide-click">Hide</a>
+  <p>bar</p>
+</div>
+
+<script>
+  $("#foo").hide();
+
+  $("#my-open-click").click(function(){
+    $("#foo").show();
+  })
+
+  $("#my-hide-click").click(function(){
+    $("#foo").hide();
+  })
+//   把 hide 和 show 分别改成
+// ♣	fadeOut 和 fadeIn      渐变打开／隐藏
+// ♣	slideUp 和 slideDown   上下滑动打开／隐藏
+// 会有不同的动画效果。
+
+</script>
